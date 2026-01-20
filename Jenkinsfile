@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-    S3_BUCKET = "my-frontend-devops-app"
-    AWS_REGION = "ap-south-1"
+    S3_BUCKET = "bhavya-bhavya-apple"
+    AWS_REGION = "us-east-1"
   }
 
   stages {
