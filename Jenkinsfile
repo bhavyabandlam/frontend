@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/bhavyabandlam/frontend.git'
+        git  branch:'main'
+              url: 'https://github.com/bhavyabandlam/frontend.git'
           
       }
     }
@@ -36,7 +37,7 @@ pipeline {
       steps {
         sh '''
           aws cloudfront create-invalidation \
-          --distribution-id E123456789 \
+          --distribution-id E2LSDHNRWD3O43 \
           --paths "/*"
         '''
       }
