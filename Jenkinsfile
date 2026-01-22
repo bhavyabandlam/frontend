@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET = 'aws-devops-microservices-frontend'
+        S3_BUCKET = 'bhavya-bhavya-apple'
         CLOUDFRONT_DISTRIBUTION_ID = 'E28B08W45JIKSL'
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/nexgen369/frontendproject.git'
+                    url: 'https://github.com/bhavyabandlam/frontend.git'
             }
         }
 
