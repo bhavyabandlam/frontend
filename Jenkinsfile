@@ -27,10 +27,7 @@ pipeline {
 
         stage('Deploy to S3 & Invalidate CloudFront') {
             steps {
-                withCredentials([[
-                    $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'aws-credentials'
-                ]]) {
+                {
                     sh '''
                       aws s3 sync build/ s3://$S3_BUCKET --delete
                       aws cloudfront create-invalidation \
