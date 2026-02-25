@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET = 'aws-frontend-project11'
-        CLOUDFRONT_DISTRIBUTION_ID = 'E2LSDHNRWD3O43'
+        S3_BUCKET = 'frontend2000'
+        CLOUDFRONT_DISTRIBUTION_ID = 'E3M877EY746O60'
     }
 
     stages {
